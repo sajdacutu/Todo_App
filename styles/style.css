@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Universal  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #f7f7f7 0% 0% no-repeat padding-box;
+}
+
+/* Navbar */
+
+.navbar {
+  opacity: 1;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 30px #7b7b7b29;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+.navbar > h1 {
+  color: #424242;
+  text-align: left;
+  margin-left: 137px;
+  letter-spacing: 0px;
+  font: normal normal bold 40px/49px "Inter", sans-serif;
+}
+
+.navbar > h1 > span {
+  color: #00a5ec;
+}
+
+/* Add Button */
+
+.task-button-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-right: 80px;
+}
+
+.task-button-container > p {
+  margin: 0 140px 0 20px;
+  font-size: 22px;
+  color: #424242;
+  font: normal normal normal 22px/26px "Inter";
+}
+
+.task-button-container > a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.task-button-container > a > .task-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin: 48px 0 52px 0;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a5ec;
+}
+
+.task-button-container > .task-button > i {
+  color: #ffff;
+  font-size: 1.6rem;
+}
+
+/* Task Grid Container */
+
+.task-container {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 52px;
+  grid-template-columns: repeat(3, 352px);
+  gap: 16px;
+}
+
+/* Task Box */
+
+.task-box {
+  min-height: 360px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.task-title {
+  color: #00A5EC;
+  margin: 34px 0 30px 34px;
+  font: normal normal normal 22px "Inter";
+}
+
+.task-box div {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0 44px;
+}
+
+.task-box hr {
+  border: 1px solid #EDEDED;
+}
+
+.task-name {
+  width: 25px;
+  height: 25px;
+}
+
+
+.task-box .complete {
+  font: normal normal normal 20px "Inter";
+  letter-spacing: 0px;
+  color: #C2C2C2;
+  margin-left: 13px;
+  text-decoration: line-through;
+}
+
+.task-box .progress {
+  font: normal normal normal 20px "Inter";
+  letter-spacing: 0px;
+  color: #424242;
+  margin-left: 13px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar > h1 {
+    margin-left: 12px;
+    font-size: 29px;
+  }
+
+  .task-button-container {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .task-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .task-button-container > p {
+    margin: 0;
+    display: none;
+  }
+
+  .task-container {
+    grid-template-columns: 352px;
+  }
+}

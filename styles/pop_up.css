@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.blur {
+  position: absolute;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.7;
+  background-color: rgb(49, 49, 49);
+}
+
+.pop-up {
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 270px;
+  position: absolute;
+  border: 1px solid #ededed;
+  background-color: white;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.heading > h2 {
+  margin: 20px;
+  font: normal normal medium 26px;
+  font-family: "Inter";
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cross-button {
+  margin: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.task-input {
+  width: 450px;
+  height: 40px;
+  padding: 0 10px;
+  margin: 30px 15px;
+  border: 1px solid #a4a3a3;
+  border-radius: 4px;
+}
+
+hr {
+  background-color: #ededed;
+}
+
+button {
+  float: right;
+  margin-right: 20px;
+  width: 180px;
+  height: 48px;
+  border: none;
+  color: #FFFF;
+  cursor: pointer;
+  font-size: 21px;
+  border-radius: 4px;
+  font-family: 'Inter';
+  background: #00a5ec 0% 0% no-repeat padding-box;
+}
+
+@media  screen and (max-width: 552px) {
+  
+  .pop-up {
+    width: 338px;
+  }
+
+  .task-input {
+    width: 285px;
+  }
+}

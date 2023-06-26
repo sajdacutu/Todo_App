@@ -1,0 +1,77 @@
+.task-edit {
+  width: 500px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-edit > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.task-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  color: #ffff;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a5ec;
+}
+
+.task-button > i {
+  color: #ffff;
+  font-size: 1.6rem;
+}
+
+.back {
+  width: 35px;
+  height: 35px;
+  background: #424242 0% 0% no-repeat padding-box;
+}
+
+.back > i {
+  color: #ffff;
+  font-size: 1.2rem;
+}
+
+.task-edit > a > span {
+  font: normal normal normal 20px/24px Inter;
+  letter-spacing: 0px;
+  color: #424242;
+}
+
+.task-box-edit {
+    width: 500px;
+    height: 338px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 552px) {
+    
+    .task-edit {
+        justify-content: start;
+    }
+
+    .add {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .text-add {
+        display: none;
+    }
+
+    .task-box-edit {
+        width: 336px;
+    }
+
+    .back {
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="./styles/add_task.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Tasks <span>List</span></h1>
+    </div>
+    <div class="task-edit">
+        <a href="./index.html">
+            <div class="task-button back">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <span>Back</span>
+        </a>
+        <a href="./pop_up_item.html">
+            <div class="task-button add">
+                <i class="fa-sharp fa-solid fa-plus"></i>
+            </div>
+            <span class="text-add">Add New Task</span>
+        </a>  
+    </div>
+    <div class="task-box task-box-edit">
+        <a href="./pop_up_item.html">
+            <h2 class="task-title">
+                Trip to Paris
+            </h2>
+        </a>
+        <hr><br>
+        <div>
+            <input checked  disabled type="checkbox" id="one" class="task-name">
+            <label class="complete" for="one">Visit Church</label>
+        </div>
+        <div>
+            <input type="checkbox" id="two" class="task-name">
+            <label class="progress" for="two">Shopping</label>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/320a3bcc8a.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
